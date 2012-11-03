@@ -98,7 +98,6 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px;
-  background: rgba(255, 255, 255, 0.12);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -ms-transition: all .2s linear;
