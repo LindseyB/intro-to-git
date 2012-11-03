@@ -5,6 +5,3 @@
 * item 3
 
 *italic text* __bold text__
-
-
-Change I don't want.
