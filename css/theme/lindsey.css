@@ -175,3 +175,8 @@ body {
 .activity .reveal .state-background {
   background: rgba( 50, 200, 90, 0.3 );
 }
+
+#download-link {
+  font-size: 300%;
+}
+
