@@ -36,12 +36,12 @@
 			<div class="slides">
 				<section data-state="activity">
 					<h2>Download Class Materials</h2>
-					<p><a href="http://bit.ly/TtdAF5" id="download-link">http://bit.ly/TtdAF5</a></p>
+					<p><a href="https://github.com/gdipgh/intro-to-git" id="download-link">https://github.com/gdipgh/intro-to-git</a></p>
 				</section>
 
 				<section>
 					<h2>Intro to Version Control Using Git</h2>
-					<h4>Jeremy Flores &amp; Lindsey Bieda</h4>
+					<h4>Lindsey Bieda</h4>
 				</section>
 
 				<section data-state="activity">
@@ -70,7 +70,6 @@
 					</p>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
 					<h2>What does that mean?</h2>
 					<p>
@@ -98,6 +97,7 @@
 					</p>
 					<small>Distributed, in this case, basically means that we can have the same thing existing in multiple locations</small>
 					<img src="images/Git-Logo.png" alt="git">
+					<img src="images/peer-to-peer.png" alt="distrubuted peer to peer network">
 				</section>
 
 				<section>
@@ -107,7 +107,23 @@
 					</p>
 					<img src="images/GitHub_Logo.png" alt="github">
 				</section>
+				
+				<section>
+					<h2>Many Open Source projects hosted here</h2>
+					<img src="images/opensource.png" alt="open source project on github">
+				</section>
 
+				<section>
+					<h2>Collaboration</h2>
+					<p>
+						<ul>
+							<li>Git makes collaboriton easy</li>
+							<li>GitHub makes collaboration even easier</li>
+							<li>Easy to copy existing code, update, and share updates with others</li>
+						</ul>
+					</p>
+					<img src="images/hardcore-forking.gif" "forking a repo">
+				</section>
 
 				<section data-state="activity">
 					<h1>Tool Check</h1>
@@ -120,6 +136,7 @@
 							<li>View your GitHub profile page: <br>
 							http://github.com/<strong>your_username</strong></li>
 						</ul>
+						<img src="images/sample-avatar.png" alt="sample avatar of a sea otter licking glass">
 					</p>
 					<small>note: for gravatar use the same email your signed up for github with.</small>
 				</section>
@@ -144,23 +161,25 @@
 				</section>
 
 				<section>
-					<h2>GitHub App Anatomy</h2>
-					<img src="images/main-anatomy-windows.png" alt="main anatomy windows">
-				</section>
+					<section>
+						<h2>GitHub App Anatomy</h2>
+						<img src="images/main-anatomy-windows.png" alt="main anatomy windows">
+					</section>
 
-				<section>
-					<h2>GitHub App Anatomy</h2>
-					<img src="images/main-anatomy-mac.png" alt="main anatomy windows">
-				</section>
+					<section>
+						<h2>GitHub App Anatomy</h2>
+						<img src="images/main-anatomy-mac.png" alt="main anatomy windows">
+					</section>
 
-				<section>
-					<h2>GitHub App Anatomy</h2>
-					<img src="images/inside-repo-anatomy-windows.png" alt="repo anatomy windows">
-				</section>
+					<section>
+						<h2>GitHub App Anatomy</h2>
+						<img src="images/inside-repo-anatomy-windows.png" alt="repo anatomy windows">
+					</section>
 
-				<section>
-					<h2>GitHub App Anatomy</h2>
-					<img src="images/inside-repo-anatomy-mac.png" alt="repo anatomy windows">
+					<section>
+						<h2>GitHub App Anatomy</h2>
+						<img src="images/inside-repo-anatomy-mac.png" alt="repo anatomy windows">
+					</section>
 				</section>
 
 				<section>
@@ -245,9 +264,12 @@
 						<ul>
 							<li>Avoid being vague</li>
 							<li>Realize that not only are you communicating with future-you, but potientially others</li>
-							<li>When you can focus on why you did something not what you did</li>
+							<li>When you can, focus on why you did something not what you did</li>
 						</ul>
 					</p>
+					<aside class="notes">
+						Look at commit messages for https://github.com/LindseyB/intro-to-git
+					</aside>
 				</section>
 
 				<section data-state="activity">
@@ -289,7 +311,7 @@
 							<li>Any bugs in a chunk of software</li>
 						</ul>
 					</p>
-					<small>According to the jargon file the name comes from Lewis Carroll's <em>Alice's Adventures In Wonderland</em> 
+					<small>According to the <a href="http://catb.org/jargon/html/index.html">jargon file</a> the name comes from Lewis Carroll's <em>Alice's Adventures In Wonderland</em> 
 						when she encounters "Eat Me" and "Drink Me"</small>
 				</section>
 
@@ -369,7 +391,8 @@
 					<h3>Commit only one file</h3>
 					<ul>
 						<li>Create "NewFile.md"</li>
-						<li>Commit your changes from the GitHub app and be sure to only select this file.</li>
+						<li>Make some changes in "README.md"</li>
+						<li>Commit your changes from the GitHub app and be sure to only select "NewFile.md".</li>
 						<li>When you click on the commit only this file will show up in the list of changes.</li>
 					</ul>
 				</section>
@@ -383,6 +406,9 @@
 							<li>Difference branches are like parallel universes: they may be very different from one another
 								or very similar and they exist at the same time.</li>
 						</ul>
+						<aside class="notes">
+							look at https://github.com/rails/rails
+						</aside>
 					</p>
 					<img src="images/currentbranch.png" alt="current branch">
 				</section>
@@ -417,7 +443,7 @@
 				<section>
 					<h2>How do we view a different branch on GitHub.com?</h2>
 					<aside class="notes">
-						Demonstrate this with https://github.com/LindseyB/intro-to-git
+						Demonstrate this with https://github.com/rails/rails
 					</aside>
 				</section>
 
@@ -468,7 +494,7 @@
 
 				<section data-state="activity">
 					<h1>Activity</h1>
-					<h3>Creating a new branch</h3>
+					<h3>Merging a branch</h3>
 					<ul>
 						<li>Merge the <strong>song</strong> branch into the <strong>master</strong> branch</li>
 						<li>Commit your changes</li>
@@ -530,6 +556,16 @@
 					<h1>THE END</h1>
 					<h3>Thank you!</h3>
 					<img src="images/octdrey-catburn.png" alt="Octdrey Catburn">
+				</section>
+
+				<section data-state="activity">
+					<h1>Bonus: Activity</h1>
+					<h3>Try Git Command-line</h3>
+					<ul>
+						<li>Open <a href="http://try.github.com">Code School - Try Git</a>.</li>
+						<li>Run through the simple exercises on the web.</li>
+						<li>If you have time, try it on your computer.</li>
+					</ul>
 				</section>
 
 			</div>
