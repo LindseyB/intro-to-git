@@ -44,6 +44,10 @@ body {
   text-shadow: none;
 }
 
+.reveal img {
+  max-height: 80%;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
@@ -64,7 +68,13 @@ body {
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  font-size: 3em;
 }
+
+.reveal h2 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
 
 /*********************************************
  * LINKS
