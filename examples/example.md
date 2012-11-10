@@ -5,3 +5,4 @@
 * item 3
 
 *italic text* __bold text__
+A change of a different sort.
