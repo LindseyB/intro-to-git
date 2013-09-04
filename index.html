@@ -153,27 +153,9 @@
 					<h1>Tool Check</h1>
 					<h3>Open the Terminal</h3>
 					<ul>
-						<li>On Mac: </li>
+            <li>On Mac: Applications > Terminal</li>
 						<li>On Windows: </li>
 					</ul>
-				</section>
-
-				<section>
-					<section>
-						<h2>Setting up Git</h2>
-					</section>
-
-					<section>
-						<h2>Configuring Git</h2>
-					</section>
-
-					<section>
-						<h2>Configuring Git</h2>
-					</section>
-
-					<section>
-						<h2>Configuring Git</h2>
-					</section>
 				</section>
 
 				<section>
@@ -380,11 +362,6 @@
           <p>We only add the files we want!</p>
 				</section>
 
-				<section>
-					<h2>We can also add all files that are modified and tracked</h2>
-          <p>We only add the files we want!</p>
-				</section>
-
 				<section data-state="activity">
 					<h1>Activity</h1>
 					<h3>Commit only one file</h3>
@@ -435,7 +412,7 @@
 				<section>
 					<h2>How do we create a new branch in the GitHub app?</h2>
 					<aside class="notes">
-						Demonstrate this with the GitHub app.
+						Demonstrate this within the terminal.
 					</aside>
 				</section>
 
@@ -443,6 +420,16 @@
 					<h2>How do we view a different branch on GitHub.com?</h2>
 					<aside class="notes">
 						Demonstrate this with https://github.com/rails/rails
+            <ol>
+              <li>git branch song</li>
+              <li>git checkout song</li>
+              <li>git branch</li>
+            </ol>
+            <p> OR </p>
+            <ol>
+              <li>git checkout -b song</li>
+              <li>git branch</li>
+            </ol>
 					</aside>
 				</section>
 
@@ -454,7 +441,6 @@
 						<li>Create a new branch named "song"</li>
 						<li>Add any song lyrics to your "README.md" file</li>
 						<li>Commit your changes</li>
-						<li>Sync your changes</li>
 						<li>View your README on the GitHub website <br>
 							https://github.com/<strong>[username]</strong>/<strong>[repo name]</strong>
 							<small>note: it will still look the same</small>
@@ -486,7 +472,11 @@
 				<section>
 					<h2>How do we merge in the github app</h2>
 					<aside class="notes">
-						Demonstrate this with the GitHub app.
+						Demonstrate this within the terminal.
+            <ol>
+              <li>git checkout master</li>
+              <li>git merge song</li>
+            </ol>
 					</aside>
 				</section>
 
@@ -497,7 +487,6 @@
 					<ul>
 						<li>Merge the <strong>song</strong> branch into the <strong>master</strong> branch</li>
 						<li>Commit your changes</li>
-						<li>Sync your changes</li>
 						<li>View your README on the GitHub website <br>
 							https://github.com/<strong>[username]</strong>/<strong>[repo name]</strong>
 							<small>note: it should now have your song lyrics</small>
@@ -513,7 +502,7 @@
 				<section>
 					<h2>How do we roll back in the github app?</h2>
 					<aside class="notes">
-						Demonstrate this with the GitHub app.
+						Demonstrate this within the terminal.
 					</aside>
 				</section>	
 
@@ -526,7 +515,9 @@
 				<section>
 					<h2>How do we revert in the github app?</h2>
 					<aside class="notes">
-						Demonstrate this with the GitHub app.
+						Demonstrate this within the terminal.
+						<li>git log | head</li>
+            <li>git reset <strong>[hash for commit you want to revert to]</strong></li>
 					</aside>
 				</section>
 
@@ -535,9 +526,9 @@
 					<h3>Reverting some changes</h3>
 					<ul>
 						<li>Open "README.md" and add "Changes I don't want" to it.</li>
-						<li>Open the GitHub app and commit your changes.</li>
-						<li>Now click on the commit from the list and click the revert button.</li>
-						<li>Notice you will now have a new commit that says "Revert..."</li>
+						<li>Commit your changes.</li>
+            <li>Find the hash for the commit you want to revert back to.</li>
+            <li>Reset to that commit</li>
 					</ul>
 				</section>
 
@@ -547,6 +538,7 @@
 						<li><a href="http://try.github.com">Code School - Try Git</a> (command-line based tutorial)</li>
 						<li><a href="http://git-scm.com/documentation">Git</a>'s official documentation</li>
 						<li><a href="http://gitimmersion.com">Git Immersion</a> a git walkthrough from the command-line</li>
+            <li><a href="http://vimeo.com/72762735">Deliberate Git</a> a talk about writing good commits</li>
 					</ol>
 					<img src="images/bookstack.png" alt="bookstack">
 				</section>				
@@ -555,16 +547,6 @@
 					<h1>THE END</h1>
 					<h3>Thank you!</h3>
 					<img src="images/octdrey-catburn.png" alt="Octdrey Catburn">
-				</section>
-
-				<section data-state="activity">
-					<h1>Bonus: Activity</h1>
-					<h3>Try Git Command-line</h3>
-					<ul>
-						<li>Open <a href="http://try.github.com">Code School - Try Git</a>.</li>
-						<li>Run through the simple exercises on the web.</li>
-						<li>If you have time, try it on your computer.</li>
-					</ul>
 				</section>
 
 			</div>
