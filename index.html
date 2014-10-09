@@ -41,7 +41,7 @@
 
 				<section>
 					<h2>Intro to Version Control Using Git</h2>
-					<h4>Lindsey Bieda</h4>
+					<h4>Marylou Lenhart</h4>
 				</section>
 
 				<section data-state="activity">
@@ -58,7 +58,7 @@
 					<h2>Goals for the class</h2>
 					<ul>
 						<li>Basic understanding of what version control is</li>
-						<li>Basic understanding of git is and how to use it</li>
+						<li>Basic understanding of what git is and how to use it</li>
 						<li>Knowledge of github and what it provides us</li>
 					</ul>
 				</section>
@@ -77,7 +77,7 @@
 							<li>You can make changes to documents and save those changes.</li>
 							<li>You can undo changes</li>
 							<li>You can include changes from other people*</li>
-							<li>You can multiple change-sets simultaneously*</li>
+							<li>You can see multiple change-sets simultaneously*</li>
 						</ul>
 					</p>
 				</section>
@@ -151,6 +151,17 @@
 
 				<section data-state="activity">
 					<h1>Tool Check</h1>
+					<h3>Downloading Git</h3>
+					<p>
+						<ul>
+              <li><a href="http://git-scm.com/download/mac">For Mac</a></li>
+              <li><a href="http://git-scm.com/download/win">For Windows</a></li>
+						</ul>
+					</p>
+				</section>
+
+				<section data-state="activity">
+					<h1>Tool Check</h1>
 					<h3>Open the Terminal</h3>
 					<ul>
             <li>On Mac: Applications > Terminal</li>
@@ -176,9 +187,40 @@
 					<h1>Activity</h1>
 					<h3>Our first repository</h3>
 					<ul>
-						<li>Make a new directory</li>
-						<li>Enter new directory</li>
-						<li>Type `git init`</li>
+            <li>Go into our Github account in the browser</li>
+					</ul>
+          <img src="images/github-page.png" />
+				</section>
+        
+        <section data-state="activity">
+          <h1>Activity</h1>
+          <h3>Creating a new repository</h3>
+          <ul>
+            <li>Create a new repository</li>
+          </ul>
+          <img src="images/github-page-new-dropdown.png" />
+        </section>
+        
+        <section data-state="activity">
+          <h1>Activity</h1>
+          <h3>Creating a new repository</h3>
+          <img src="images/github-new-repo-form.png" />
+        </section>
+
+        <section data-state="activity">
+          <h1>Activity</h1>
+          <h3>Creating a new repository</h3>
+          <img src="images/github-copy-clone-url.png" />
+        </section>
+
+				<section data-state="activity">
+					<h1>Activity</h1>
+					<h3>Our first repository</h3>
+					<ul>
+            <li>Go back to the terminal</li>
+            <li>Type <code>git clone _paste_your_url_here_</code></li>
+            <li>Press enter</li>
+            <li>Go into the newly created directory by typing <br /><code>cd _name_of_your_repo_</code></li>
 					</ul>
 				</section>
 
@@ -251,11 +293,11 @@
 					<h1>Activity</h1>
 					<h3>First commit</h3>
 					<ul>
-            <li>Create a new file named "README.md" inside the directory you just created,<br>
+            <li>Create a new file named "README.md" inside the directory you just created,
               and save it.</li>
 						<li>Commit your changes: <br>
-              Type `git add README.md` <br>
-              Type `git commit -m "<strong>Your Commit Message</strong>"` <br>
+              Type <code>git add README.md</code> <br>
+              Type <code>git commit -m "<strong>Your Commit Message</strong>"</code> <br>
               Make sure to provide a good description for your commit <br>
               And remember to put your commit message in quotes</li>
 					</ul>
@@ -272,7 +314,7 @@
 					<h1>Activity</h1>
 					<h3>Sync your changes</h3>
 					<ul>
-            <li>Type `git push origin master`</li>
+            <li>Type <code>git push origin master</code></li>
 						<li>View the changes on GitHub: <br>
 							https://github.com/<strong>[username]</strong>/<strong>[repo name]</strong></li>
 					</ul>
@@ -441,6 +483,7 @@
 						<li>Create a new branch named "song"</li>
 						<li>Add any song lyrics to your "README.md" file</li>
 						<li>Commit your changes</li>
+						<li>Push your changes</li>
 						<li>View your README on the GitHub website <br>
 							https://github.com/<strong>[username]</strong>/<strong>[repo name]</strong>
 							<small>note: it will still look the same</small>
@@ -486,6 +529,8 @@
 					<h3>Merging a branch</h3>
 					<ul>
 						<li>Merge the <strong>song</strong> branch into the <strong>master</strong> branch</li>
+            <li>Type <code>git co master</code></li>
+            <li>Type <code>git merge song</code></li>
 						<li>Commit your changes</li>
 						<li>View your README on the GitHub website <br>
 							https://github.com/<strong>[username]</strong>/<strong>[repo name]</strong>
@@ -530,6 +575,9 @@
             <li>Find the hash for the commit you want to revert back to.</li>
             <li>Reset to that commit</li>
 					</ul>
+					<aside class="notes">
+            If there's time, maybe go into `git rebase -i`?
+					</aside>
 				</section>
 
 				<section>

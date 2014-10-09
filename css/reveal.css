@@ -275,6 +275,7 @@ body {
 }
 
 .reveal code {
+  color: blue;
 	font-family: monospace;
 	overflow: auto;
 	max-height: 400px;
