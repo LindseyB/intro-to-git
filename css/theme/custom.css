@@ -1,0 +1,6 @@
+/*********************************************
+ * custom changes to the GDI styles/theme
+ *********************************************/
+ .reveal pre code.perl {
+ 		color: #DCDCDC;
+ }
