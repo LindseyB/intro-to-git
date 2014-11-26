@@ -454,7 +454,7 @@
 				</section>
 
 				<section>
-					<h2>How do we create a new branch in the GitHub app?</h2>
+					<h2>How do we create a new branch in Git?</h2>
 					<aside class="notes">
 						Demonstrate this within the terminal.
 					</aside>
@@ -483,6 +483,7 @@
 					<h3>Creating a new branch</h3>
 					<ul>
 						<li>Create a new branch named "song"</li>
+            <li><code>git co -b song</code></li>
 						<li>Add any song lyrics to your "README.md" file</li>
 						<li>Commit your changes</li>
 						<li>Push your changes</li>
@@ -515,7 +516,7 @@
 				</section>
 
 				<section>
-					<h2>How do we merge in the github app</h2>
+					<h2>How do we merge in Git</h2>
 					<aside class="notes">
 						Demonstrate this within the terminal.
             <ol>
@@ -531,7 +532,7 @@
 					<h3>Merging a branch</h3>
 					<ul>
 						<li>Merge the <strong>song</strong> branch into the <strong>master</strong> branch</li>
-            <li>Type <code>git co master</code></li>
+            <li>Type <code>git checkout master</code></li>
             <li>Type <code>git merge song</code></li>
 						<li>Commit your changes</li>
 						<li>View your README on the GitHub website <br>
@@ -547,9 +548,10 @@
 				</section>
 
 				<section>
-					<h2>How do we roll back in the github app?</h2>
+					<h2>How do we roll back in Git?</h2>
 					<aside class="notes">
 						Demonstrate this within the terminal.
+            <li>git reset --soft HEAD~1</li>
 					</aside>
 				</section>	
 
@@ -560,10 +562,10 @@
 				</section>
 
 				<section>
-					<h2>How do we revert in the github app?</h2>
+					<h2>How do we revert in Git?</h2>
 					<aside class="notes">
 						Demonstrate this within the terminal.
-						<li>git log | head</li>
+            <li>git log | head</li>
             <li>git reset <strong>[hash for commit you want to revert to]</strong></li>
 					</aside>
 				</section>
@@ -575,7 +577,9 @@
 						<li>Open "README.md" and add "Changes I don't want" to it.</li>
 						<li>Commit your changes.</li>
             <li>Find the hash for the commit you want to revert back to.</li>
+            <li><code>git log | head</code></li>
             <li>Reset to that commit</li>
+            <li><code>git reset <strong>[hash for commit you want to revert to]</strong></code></li>
 					</ul>
 					<aside class="notes">
             If there's time, maybe go into `git rebase -i`?
